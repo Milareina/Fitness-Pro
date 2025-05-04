@@ -576,10 +576,27 @@ footer {
   .gallery {
     margin: 80px 100px;
     gap: 40px;
+    min-height: 700px;
   }
-
+  .gallery-image-left,
+  .gallery-image-right {
+    flex: 1;
+    min-height: 700px;
+    overflow: hidden;
+    
+  }
+  
+  .gallery-image-left img,
+  .gallery-image-right img {
+    width: 100%;
+    height: 100%;
+    
+  }
+  .features {
+    min-height: 100%;
+  }
   .feature-card {
-    padding: 30px 0;
+    padding: 20px 0;
   }
   .contact {
     margin: 80px 100px;
@@ -631,7 +648,9 @@ footer {
   .gallery {
     margin: 60px 80px;
     gap: 35px;
+    min-height: 600px;
   }
+ 
 
   .feature-card {
     padding: 25px 0;
@@ -742,8 +761,41 @@ footer {
     margin: 50px 60px;
     gap: 30px;
   }
+  .gallery-image-left,
+  .gallery-image-right {
+    flex: 1;
+    min-height: 700px;
+    overflow: hidden;
+    
+  }
+  
+  .gallery-image-left img,
+  .gallery-image-right img {
+    width: 100%;
+    height: 95%;
+
+  }
   .feature-card {
-    padding: 20px 0;
+    padding: 25px 0;
+  }
+
+  .feature-text {
+    font-size: 20px;
+  }
+
+  .feature-btn {
+    padding: 25px 40px;
+    max-width: 500px;
+    height: 65px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .feature-icon {
+    width: 48px;
+    height: 39px;
+    margin-right: 10px;
+    padding: 4px;
   }
   .contact {
     margin: 50px 60px;
@@ -785,28 +837,7 @@ footer {
     font-size: 16px;
   }
 
-  .feature-card {
-    padding: 25px 0;
-  }
-
-  .feature-text {
-    font-size: 20px;
-  }
-
-  .feature-btn {
-    padding: 25px 40px;
-    max-width: 500px;
-    height: 65px;
-    font-size: 16px;
-    margin-top: 20px;
-  }
-
-  .feature-icon {
-    width: 48px;
-    height: 39px;
-    margin-right: 10px;
-    padding: 4px;
-  }
+  
 }
 
 @media screen and (max-width: 1024px) {
@@ -848,6 +879,25 @@ footer {
   .feature-card {
     padding: 15px 0;
   }
+  .feature-text {
+    font-size: 18px;
+  }
+
+  .feature-btn {
+    padding: 12px 25px;
+    max-width: 450px;
+    height: 60px;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .feature-icon {
+    width: 45px;
+    height: 37px;
+    margin-right: 10px;
+    padding: 3px;
+  }
+
   .contact {
     margin: 40px;
   }
@@ -895,25 +945,7 @@ footer {
     font-size: 15px;
   }
 
-  .feature-text {
-    font-size: 18px;
-  }
-
-  .feature-btn {
-    padding: 22px 35px;
-    max-width: 450px;
-    height: 60px;
-    font-size: 15px;
-    margin-top: 15px;
-  }
-
-  .feature-icon {
-    width: 45px;
-    height: 37px;
-    margin-right: 10px;
-    padding: 3px;
-  }
-
+  
   nav {
     max-width: 500px;
   }
